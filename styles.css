@@ -54,7 +54,6 @@ nav{
     top: 0;
     width: 100%;
     z-index: 10;
-    /* background-color: rgb(62, 90, 212); */
     background-color: #374452;
     opacity: .9;
 }
@@ -164,9 +163,6 @@ nav{
     border-radius: 50%;
     padding: 10px;
     background-color: white;
-    /* box-shadow: 20px 20px black; */
-    /* transform: rotate(20deg); */
-    object-fit: cover;
 }
 
 .about-text{
