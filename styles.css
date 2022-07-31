@@ -251,10 +251,10 @@ img{
 .btn{
     background-color:  rgb(255, 96, 65);
     display: inline-block;
-    padding: 8px 50px;
+    padding: 9px 40px;
     color: whitesmoke;
     margin-right: 3px;
-    outline: 2px solid rgb(255, 96, 65);
+    /* outline: 2px solid rgb(255, 96, 65); */
     opacity: .8;
     border-radius: 30px;
 }
@@ -266,8 +266,10 @@ img{
 }
 
 .btn-2{
+    padding: 7px 40px;
     background-color:  #374452;
-    outline: 2px solid whitesmoke;
+    border: 2px solid whitesmoke;
+    /* outline: 2px solid whitesmoke; */
     color:whitesmoke;
 }
 
