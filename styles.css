@@ -13,7 +13,7 @@ html{
 body{
     font-family: 'Poppins', sans-serif;
     color: #333;
-    background-color: #333;
+    background-color: #374452;
     color: whitesmoke;
 }
 
@@ -27,123 +27,57 @@ ul{
 }
 
 header p span{
-    color:  rgb(62, 90, 212);
+    color: rgb(90, 189, 255);
 }
 
-  /* header */
-  .header {
+/* NAV */
+.hamburger{
+    background-color: transparent;
+    border: none;
+    font-size: 30px;
+    cursor: pointer;
+    display: none;
+    color: whitesmoke;
+}
+
+.hamburger:focus{
+    outline: none;
+}
+
+nav{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 20px;
     position: fixed;
+    top: 0;
     width: 100%;
     z-index: 10;
-    background-color: rgb(58, 58, 58);
-  }
-  
-  .header ul {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-    overflow: hidden;
-  }
-  
-  .header li a {
-    display: inline-block;
-    padding: 20px 20px;
-    text-decoration: none;
-    color: whitesmoke;
-    /* text-transform: uppercase; */
-  }
-  
-  .header li a:hover,
-  .header .menu-btn:hover {
-    text-decoration: underline;
-  }
-  
-  .header .logo {
-    display: block;
-    float: left;
-    font-size: 2em;
-    padding: 10px 20px;
-    text-decoration: none;
-    color: whitesmoke;
-  }
+    /* background-color: rgb(62, 90, 212); */
+    background-color: #374452;
+    opacity: .9;
+}
 
-  .logo span{
-    color: rgb(62, 90, 212);
-  }
-  
-  /* menu */
-  
-  .header .menu {
-    clear: both;
-    max-height: 0;
-    transition: max-height .2s ease-out;
-  }
-  
-  /* menu icon */
-  
-  .header .menu-icon {
-    cursor: pointer;
+.logo a{
+    font-size: 2em;
+    color: whitesmoke;
+}
+
+.nav-ul{
+    display: flex;
+}
+
+.nav-ul li a{
     display: inline-block;
-    float: right;
-    padding: 28px 20px;
-    position: relative;
-    user-select: none;
-  }
-  
-  .header .menu-icon .navicon {
-    background: whitesmoke;
-    display: block;
-    height: 2px;
-    position: relative;
-    transition: background .2s ease-out;
-    width: 18px;
-  }
-  
-  .header .menu-icon .navicon:before,
-  .header .menu-icon .navicon:after {
-    background: whitesmoke;
-    content: '';
-    display: block;
-    height: 100%;
-    position: absolute;
-    transition: all .2s ease-out;
-    width: 100%;
-  }
-  
-  .header .menu-icon .navicon:before {
-    top: 5px;
-  }
-  
-  .header .menu-icon .navicon:after {
-    top: -5px;
-  }
-  
-  /* menu btn */
-  
-  .header .menu-btn {
-    display: none;
-  }
-  
-  .header .menu-btn:checked ~ .menu {
-    max-height: 240px;
-  }
-  
-  .header .menu-btn:checked ~ .menu-icon .navicon {
-    background: transparent;
-  }
-  
-  .header .menu-btn:checked ~ .menu-icon .navicon:before {
-    transform: rotate(-45deg);
-  }
-  
-  .header .menu-btn:checked ~ .menu-icon .navicon:after {
-    transform: rotate(45deg);
-  }
-  
-  .header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
-  .header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
-    top: 0;
-  }
+    color: whitesmoke;
+    padding: 30px 30px;
+    text-transform: uppercase;
+}
+
+.nav-ul li a:hover{
+    text-decoration: underline;
+}
 
 /* HERO */
 .hero{
@@ -189,7 +123,7 @@ header p span{
 }
 
 .hero h1 span{
-    color:  rgb(62, 90, 212);
+    color:   rgb(90, 189, 255);
 }
 
 .hero p{
@@ -197,9 +131,7 @@ header p span{
 }
 /* ABOUT */
 #about{
-    /* background-color: rgb(62, 90, 212); */
-    background-color: #333;
-    color: white;
+    background-color: #374452;
     clip-path: polygon(0 0, 100% 0, 100% 92%, 0 100%);
 }
 
@@ -244,7 +176,7 @@ header p span{
 }
 
 .about-text span{
-    color: rgb(62, 90, 212);
+    color:  rgb(90, 189, 255);
 }
 /* TOOLS */
 .tools i{
@@ -281,8 +213,10 @@ img{
 }
 
 .row-column-1{
-    color:whitesmoke;
-    background-color: rgb(58, 58, 58);
+    /* background-color: whitesmoke; */
+    /* background-color: rgb(62, 90, 212); */
+    /* background-color: whitesmoke; */
+    color: whitesmoke;
     height: 100%;
     display: flex;
     flex-direction: column;
@@ -315,23 +249,26 @@ img{
 }
 
 .btn{
-    background-color:  darkorange;
+    background-color:  rgb(255, 96, 65);
     display: inline-block;
-    padding: 8px 30px;
+    padding: 8px 50px;
     color: whitesmoke;
     margin-right: 3px;
-    outline: 2px solid darkorange;
+    outline: 2px solid rgb(255, 96, 65);
+    opacity: .8;
+    border-radius: 30px;
 }
 
 .btn:hover{
     text-decoration: underline;
     transition: .3s;
+    opacity: 1;
 }
 
 .btn-2{
-    background-color: whitesmoke;
+    background-color:  #374452;
     outline: 2px solid whitesmoke;
-    color: #333;
+    color:whitesmoke;
 }
 
 .idlc-col{
@@ -341,7 +278,7 @@ img{
 }
 
 .fa-check{
-    color: rgb(62, 90, 212);
+    color:rgb(90, 189, 255);
     font-size: 1.2rem;
     padding: 10px;
     border: 2px solid white;
@@ -353,9 +290,10 @@ img{
 /* FOOTER */
 
 .foot-container{
+    background: linear-gradient( #374452,#333);
+    /* background-color:  #3c4c5d; */
     margin-top: 40px;
     min-height: 300px;
-    border-top: 1px solid black;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -405,29 +343,26 @@ img{
 
 
 /* MEDIA RESPONSIVE */
-@media (min-width: 768px) {
-    /* HEADER NAV */
-    .header li {
-      float: left;
-    }
-    .header li a {
-      padding: 20px 30px;
-    }
-    .header .menu {
-      clear: none;
-      float: right;
-      max-height: none;
-    }
-    .header .menu-icon {
-      display: none;
+@media screen and (max-width: 768px) {
+    .nav-ul{
+        display: none;
+        width: 100%;
     }
 
-    nav{
-        flex-direction: row;
+    .nav-ul.show{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
     }
-    nav ul{
-        gap: 60px;
+
+    .hamburger{
+        display: block;
     }
+}
+
+
+@media (min-width: 768px) {
     .projects-container{
         display: flex;
     }
