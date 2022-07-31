@@ -130,7 +130,6 @@ nav{
 /* ABOUT */
 #about{
     background-color: #374452;
-    clip-path: polygon(0 0, 100% 0, 100% 92%, 0 100%);
 }
 
 .about-container{
