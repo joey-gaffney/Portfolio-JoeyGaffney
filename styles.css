@@ -15,6 +15,7 @@ body{
     color: #333;
     background-color: #374452;
     color: whitesmoke;
+    font-size: 18px;
 }
 
 a{
@@ -49,7 +50,7 @@ nav{
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
-    padding: 0px 20px;
+    padding: 5px 20px;
     position: fixed;
     top: 0;
     width: 100%;
@@ -59,8 +60,11 @@ nav{
 }
 
 .logo a{
-    font-size: 2em;
+    font-size: 1.7em;
+    padding: 5px 10px;
     color: whitesmoke;
+    border: 2px solid whitesmoke;
+    border-radius: 50%;
 }
 
 .nav-ul{
@@ -69,7 +73,7 @@ nav{
 
 .nav-ul li a{
     display: inline-block;
-    color: lightgray;
+    color: whitesmoke;
     padding: 30px 30px;
 }
 
@@ -121,7 +125,7 @@ nav{
 }
 
 .hero h1 span{
-    color:   rgb(90, 189, 255);
+    color: rgb(90, 189, 255);
 }
 
 .hero p{
@@ -138,7 +142,7 @@ nav{
     align-items: center;
     /* flex-direction: column; */
     justify-content: space-evenly;
-    padding: 60px 8px;
+    padding: 60px 12px;
     flex-wrap: wrap;
 }
 
@@ -207,9 +211,6 @@ img{
 }
 
 .row-column-1{
-    /* background-color: whitesmoke; */
-    /* background-color: rgb(62, 90, 212); */
-    /* background-color: whitesmoke; */
     color: whitesmoke;
     height: 100%;
     display: flex;
@@ -268,7 +269,6 @@ img{
 }
 
 .idlc-col{
-    background-color: whitesmoke;
     color: #333;
     gap: 40px;
 }
