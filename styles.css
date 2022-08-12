@@ -43,7 +43,7 @@ header{
     height: 100vh;
     display: flex;
     flex-direction: column;
-    background: url(/orange.jpg) no-repeat center center/cover;
+    background: url(orange.jpg) no-repeat center center/cover;
 }
 
 .logo{
