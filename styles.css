@@ -132,8 +132,7 @@ ul{
     width: 400px;
     position: absolute;
     bottom: -20px;
-    z-index: -100;
-    animation: fade-in-up 1500ms;
+    animation: fade-in 1500ms;
 }
 
 .hero{
