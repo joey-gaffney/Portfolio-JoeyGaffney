@@ -9,51 +9,56 @@
     <title>Document</title>
 </head>
 <body id="home">
-    <!-- <div class="wrapper"> -->
-        <header>
-            <nav id="navbar">
-                <div class="logo">
-                    <a href=""><i class="fa-solid fa-anchor"></i></a>
-                </div>
-                <ul>
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="mailto:joeygaffney22@gmail.com" target="_blank">Contact</a></li>
-                </ul>
-            </nav>
-            <div class="section hero">
-                <p class="name">Joey Gaffney</p>
-                <h1>Digital Marketer</h1>
-                <span>Web Developer</span>
-            </div>
-        </header>
-        <main>
+    <nav class="navbar">
+        <div class="logo"><span>J|G</span></div>
+        <div href="#" class="toggle-button">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+        <div class="navbar-links">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="mailto:joeygaffney22@gmail.com" target="_blank">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- HERO -->
+    <section class="hero">
+        <p class="name">Joey Gaffney</p>
+        <h1>Digital Marketer</h1>
+        <span>Web Developer</span>
+        <a href="mailto:joeygaffney22@gmail.com" target="_blank" class="btn hero-btn">Contact</a>
+        <img src="laptop.jpg" alt="">
+    </section>
+        
             <!-- ABOUT -->
             <section id="about" class="about">
-                <img class="about-img" src="mecopy.png" alt="">
-                <div class="text-container">
-                    <div class="about-text">
-                        <p>Hi there, I'm Joey. I'm a digital marketer and web developer experienced in helping people and business's grow their online presence through targeted marketing and advertising.</p>
-                        <br>
-                        <div class="icons-container">
-                            <i class="fa-solid fa-check about-icons"></i>
-                            <span>Facebook Ads</span>
+                <div class="about-container">
+                    <div class="text-container">
+                        <div class="about-text">
+                            <p>Hi there, I'm Joey. I'm a digital marketer and web developer experienced in helping people and businesses grow their online presence through targeted marketing and advertising.</p>
                             <br>
-                            <i class="fa-solid fa-check about-icons"></i>
-                            <span>Google Ads</span>
+                            <div class="icons-container">
+                                <i class="fa-solid fa-check about-icons"></i>
+                                <span>Facebook Ads</span>
+                                <br>
+                                <i class="fa-solid fa-check about-icons"></i>
+                                <span>Google Ads</span>
+                                <br>
+                                <i class="fa-solid fa-check about-icons"></i>
+                                <span>Google Analytics</span>
+                            </div>
                             <br>
-                            <i class="fa-solid fa-check about-icons"></i>
-                            <span>Google Analytics</span>
-                        </div>
-                        <br>
-                        <div class="dev-icons">
-                            <i class="fa-brands fa-html5"></i>
-                            <i class="fa-brands fa-css3-alt"></i>
-                            <i class="fa-brands fa-js"></i>
-                            <i class="fa-brands fa-bootstrap"></i>
-                            <i class="fa-solid fa-terminal"></i>
-                            <i class="fa-brands fa-github"></i>
+                            <div class="dev-icons">
+                                <i class="fa-brands fa-html5"></i>
+                                <i class="fa-brands fa-css3-alt"></i>
+                                <i class="fa-brands fa-js"></i>
+                                <i class="fa-brands fa-bootstrap"></i>
+                                <i class="fa-solid fa-terminal"></i>
+                                <i class="fa-brands fa-github"></i>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -62,43 +67,44 @@
             <!-- PROJECTS -->
             <section id="projects">
                 <p style="font-size: 2rem; text-align:center; margin-bottom: 40px;">Projects</p>
-                <div class="projects-container">
-                    <div class="container-row">
-                        <div class="row-column-1">
-                            <h3>Task List App</h3>
-                            <p>This task list application allows a user to add, list, filter, delete and save their data to local storage. This project allowed me to dive deep into the concept <span style="font-style: italic;">"Think like a programmer."</span></p>
-                            <div class="links">
-                                <a class="btn" href="https://joey-gaffney.github.io/task-app/" target="_blank">Demo</a>
-                                <a class="btn btn-2" href="https://github.com/joey-gaffney/task-app/commit/6879702f0b7c2b7541ea389f66e4c70c2ffc7ee6" target="_blank">Code</a>
+                <div class="projects-container-inner">
+                    <div class="projects-container">
+                        <div class="container-row">
+                            <div class="row-column-1">
+                                <h3>Task List App</h3>
+                                <p>This task list application allows a user to add, list, filter, delete and save their data to local storage. This project allowed me to dive deep into the concept <span style="font-style: italic;">"Think like a programmer."</span></p>
+                                <div class="links">
+                                    <a class="btn" href="https://joey-gaffney.github.io/task-app/" target="_blank">Demo</a>
+                                    <a class="btn btn-2" href="https://github.com/joey-gaffney/task-app/commit/6879702f0b7c2b7541ea389f66e4c70c2ffc7ee6" target="_blank">Code</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="container-row">
+                            <div class="row-column-2">
+                                <img class="hoverimg" src="tasknew.jpg" alt="">
                             </div>
                         </div>
                     </div>
-                    <div class="container-row">
-                        <div class="row-column-2">
-                            <img class="hoverimg" src="tasknew.jpg" alt="">
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="projects-container reverse">
-                    <div class="container-row">
-                        <div class="row-column-1">
-                            <h3>IDLC</h3>
-                            <p>This is a fictional multi-page, responsive and functional website that showcases layout as well as some cool JavaScript and jQuery features such as a tranparent navigation menu with smooth-scroll. I used flexbox featues for the layout. I also created a utilities class in CSS for efficiency.</p>
-                            <div class="links">
-                                <a class="btn" href="https://joey-gaffney.github.io/Fictional-Law-Office-Website/" target="_blank">Demo</a>
-                                <a class="btn btn-2" href="https://github.com/joey-gaffney/Fictional-Law-Office-Website/commit/c6ff8c2316b566656212069c9914aabd5b7ccea8" target="_blank">Code</a>
+                    
+                    <div class="projects-container reverse">
+                        <div class="container-row reverse">
+                            <div class="row-column-1">
+                                <h3>IDLC</h3>
+                                <p>This is a fictional multi-page, responsive and functional website that showcases layout as well as some cool JavaScript and jQuery features such as a tranparent navigation menu with smooth-scroll. I used flexbox featues for the layout. I also created a utilities class in CSS for efficiency.</p>
+                                <div class="links">
+                                    <a class="btn" href="https://joey-gaffney.github.io/Fictional-Law-Office-Website/" target="_blank">Demo</a>
+                                    <a class="btn btn-2" href="https://github.com/joey-gaffney/Fictional-Law-Office-Website/commit/c6ff8c2316b566656212069c9914aabd5b7ccea8" target="_blank">Code</a>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="container-row">
-                        <div class="row-column-2">
-                            <img class="hoverimg" src="idlc.png" alt="">
+                        <div class="container-row">
+                            <div class="row-column-2">
+                                <img class="hoverimg" src="idlc.png" alt="">
+                            </div>
                         </div>
                     </div>
                 </div>
             </section>
-        </main>
 
         <!-- FOOTER -->
         <footer id="contact">
