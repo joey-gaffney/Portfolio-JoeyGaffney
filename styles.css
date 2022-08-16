@@ -131,14 +131,13 @@ ul{
 .hero img{
     width: 400px;
     position: absolute;
-    bottom: -90px;
+    bottom: -20px;
     z-index: -100;
     animation: fade-in-up 1500ms;
 }
 
 .hero{
-    background: url(laptop.jpg) no-repeat /cover;
-    background-size: 100%;
+    position: relative;
     height: 100vh;
     display: flex;
     flex-direction: column;
