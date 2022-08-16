@@ -137,7 +137,7 @@ ul{
 } */
 
 .hero{
-    background: url(/laptop.jpg) no-repeat center center/cover;
+    background: url(laptop.jpg) no-repeat center center/cover;
     height: 100vh;
     display: flex;
     flex-direction: column;
