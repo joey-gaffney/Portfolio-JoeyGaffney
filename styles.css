@@ -13,6 +13,7 @@ body{
     font-family: sans-serif;
     color: rgb(186, 186, 186);
     font-weight: 300;
+    background-color:black;
 }
 
 .logo a{
@@ -127,15 +128,24 @@ ul{
     }
 }
 
+.hero img{
+    width: 400px;
+    position: absolute;
+    bottom: -20px;
+    z-index: -100;
+    animation: fade-in-up 1500ms;
+}
+
 .hero{
-    background: url(laptop.jpg) no-repeat center center/cover;
+    background: url(laptop.jpg) no-repeat /cover;
+    background-size: 100%;
     height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     text-align: center;
-    color: #fff;
+    color: #fff
 }
 
 .name{
