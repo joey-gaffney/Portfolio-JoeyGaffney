@@ -128,15 +128,16 @@ ul{
     }
 }
 
-.hero img{
+/* .hero img{
     width: 400px;
     position: absolute;
     bottom: -20px;
     z-index: -100;
     animation: fade-in-up 1500ms;
-}
+} */
 
 .hero{
+    background: url(/laptop.jpg) no-repeat bottom;
     background-size: 350px;
     height: 100vh;
     display: flex;
