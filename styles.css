@@ -61,7 +61,7 @@ ul{
     content: '';
     height: 2px;
     width: 0;
-    background-color:#333;
+    background-color:rgb(0, 157, 255);
     position: absolute;
     left: 0;
     bottom: -3px;
@@ -128,16 +128,9 @@ ul{
     }
 }
 
-.hero img{
-    width: 400px;
-    position: absolute;
-    bottom: -10px;
-    z-index: -100;
-    animation: fade-in-up 1500ms;
-}
 
 .hero{
-    position: relative;
+    background: url(/techsky.jpg) no-repeat center center/cover;
     height: 100vh;
     display: flex;
     flex-direction: column;
@@ -177,6 +170,11 @@ ul{
 }
 
 /* ABOUT */
+.about-container img{
+    max-width: 400px;
+    width: 100%;
+}
+
 .about-container{
     display: flex;
     align-items: center;
@@ -188,6 +186,8 @@ ul{
     margin-right: auto;
     padding-left: 16px;
     padding-right: 16px;
+    padding-top: 60px;
+    padding-bottom: 60px;
 }
 
 .about-text{
