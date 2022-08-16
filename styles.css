@@ -137,7 +137,7 @@ ul{
 } */
 
 .hero{
-    background: url(/laptop.jpg) no-repeat bottom;
+    background: url(laptop.jpg) no-repeat bottom;
     background-size: 350px;
     height: 100vh;
     display: flex;
