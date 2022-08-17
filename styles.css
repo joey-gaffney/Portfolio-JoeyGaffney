@@ -12,7 +12,7 @@ body{
     font-size: 20px;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     color: #333;
-    font-weight: 300;
+    font-weight: 200;
 }
 
 .logo a{
@@ -34,7 +34,6 @@ a{
     position: fixed;
     width: 100%;
     color: #333;
-    z-index: 100;
 }
 
 ul{
@@ -51,7 +50,7 @@ ul{
     content: '';
     height: 2px;
     width: 0;
-    background-color:lightgray;
+    background-color:#333;
     position: absolute;
     left: 0;
     bottom: -3px;
@@ -88,7 +87,7 @@ ul{
     align-items: center;
     justify-content: center;
     text-align: center;
-    color: ##333;
+    color: #333;
 }
 
 .name{
@@ -117,7 +116,6 @@ ul{
 
 .hero-btn{
     margin-top: 20px;
-    z-index: 100;
 }
 
 /* ABOUT */
@@ -139,8 +137,8 @@ ul{
     max-width: 1300px;
     margin-left: auto;
     margin-right: auto;
-    padding-left: 16px;
-    padding-right: 16px;
+    /* padding-left: 16px; */
+    /* padding-right: 16px; */
 }
 
 .about-text{
@@ -156,14 +154,12 @@ ul{
 }
 
 .icons-container i{
-    /* color: rgb(0, 157, 255); */
     color: rgb(0, 157, 255);
 }
 
 .dev-icons{
     text-align: center;
     font-size: 4rem;
-    /* color: mediumpurple; */
     color: #333;
 }
 
@@ -178,7 +174,6 @@ ul{
 }
 
 /* PROJECTS */
-
 #projects{
     padding: 10px;
 }
@@ -213,7 +208,7 @@ ul{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 20px;
+    padding: 20px 20px;
 }
 
 .row-column-1 h3{
@@ -263,7 +258,6 @@ ul{
 }
 
 /* FOOTER */
-
 .foot-container{
     margin-top: 40px;
     min-height: 300px;
