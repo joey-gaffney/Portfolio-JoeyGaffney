@@ -165,11 +165,11 @@ ul{
 
 .dev-icons i{
     margin: 0px 5px;
-    transition: .3s ease-in-out;
+    transition: .3s;
 }
 
 .dev-icons i:hover{
-    transform: translateY(-5px);
+    transform: translateY(-12px);
     opacity: 1;
 }
 
