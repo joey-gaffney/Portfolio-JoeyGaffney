@@ -88,14 +88,20 @@ ul{
     justify-content: center;
     text-align: center;
     color:#333;
+    position: relative;
 }
 
-.hero-img{
+.hero-img-div{
     position: absolute;
     bottom: 0;
     right: 0;
     z-index: -10;
     height: 320px;
+}
+
+.hero-img{
+    height: 320px;
+    height: 100%;
 }
 
 .name{
@@ -145,8 +151,8 @@ ul{
     max-width: 1300px;
     margin-left: auto;
     margin-right: auto;
-    /* padding-left: 16px; */
-    /* padding-right: 16px; */
+    padding-left: 16px;
+    padding-right: 16px;
 }
 
 .about-text{
