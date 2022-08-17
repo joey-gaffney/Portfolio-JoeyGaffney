@@ -87,7 +87,25 @@ ul{
     align-items: center;
     justify-content: center;
     text-align: center;
-    color: #333;
+    color:#333;
+}
+
+.hero-inner{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color:#333;
+    position: relative;
+}
+
+.hero-img{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: -10;
+    height: 320px;
 }
 
 .name{
@@ -239,22 +257,24 @@ ul{
 .btn{
     /* display: inline-block; */
     padding: 10px 40px;
-    color: rgba(51, 51, 51, 0.725);
     margin-right: 8px;
-    outline: 1px solid rgba(51, 51, 51, 0.502);
     border-radius: 4px;
+    outline: 1px solid #333;
+    color: #333;
 }
 
 .btn:hover{
+    outline: 1px solid rgba(51, 51, 51, 0.502);
+    color:  rgba(51, 51, 51, 0.725);
     transition: .1s ease-in-out;
-    outline-color: #333;
-    color: #333;
 }
 
 .btn-2{
     padding: 10px 40px;
     outline: 1px solid rgba(51, 51, 51, 0.502);
     color:  rgba(51, 51, 51, 0.725);
+    outline-color: #333;
+    color: #333;
 }
 
 /* FOOTER */
@@ -294,10 +314,12 @@ ul{
 }
 
 .one{
-    color: rgb(0, 157, 255);
-    font-size: 1.8rem;
-    padding: 1px 1px;
+    color: #fff;
+    font-size: 1.4rem;
+    padding: 6px 6px;
     border-radius: 50%;
+    border: 2px solid rgb(0, 191, 255);
+    background-color: #333;
     transition: all .2s ease-in-out;
     cursor: pointer;
     transition: .3s ease-in-out;
