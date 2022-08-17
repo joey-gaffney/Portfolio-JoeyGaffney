@@ -90,17 +90,6 @@ ul{
     color:#333;
 }
 
-.hero-inner{
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    color:#333;
-    position: relative;
-}
-
 .hero-img{
     position: absolute;
     bottom: 0;
