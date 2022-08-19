@@ -389,7 +389,7 @@ ul{
 }
 
 .cnt-links{
-    margin: 5px 0px 0px 30px;
+    margin-top: 10px;
 }
 
 @media screen and (max-width: 700px) {
