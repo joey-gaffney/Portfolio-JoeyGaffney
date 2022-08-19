@@ -91,12 +91,22 @@ ul{
     position: relative;
 }
 
+@keyframes slide-in {
+    from {
+      transform: translateX(100%);
+    }
+    to {
+      transform: translateX(0%);
+    }
+  }
+
 .hero-img-div{
     position: absolute;
     bottom: 0;
     right: 0;
     z-index: -10;
     height: 340px;
+    animation: slide-in 1000ms;
 }
 
 .hero-img{
