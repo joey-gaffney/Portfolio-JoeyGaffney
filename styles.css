@@ -411,6 +411,15 @@ ul{
     text-align: center;
 }
 
+@keyframes slide-in-right {
+    from {
+      transform: translateX(100%);
+    }
+    to {
+      transform: translateX(0%);
+    }
+  }
+
 @media screen and (max-width: 700px) {
     
     .about-container{
@@ -441,15 +450,24 @@ ul{
         align-items: flex-start;
         gap: 30px;
     }
-
+    
     .navbar-links ul{
         flex-direction: column;
-        width: 100%;
         align-items: flex-end;
+        width: 100%;
     }
 
     .navbar-links.active{
         display: flex;
+        width: 100%;
+        animation: slide-in-right .3s;
+    }
+    .navbar-links.active{
+        width: 100%;
+    }
+
+    .navbar.active{
+        background-color: whitesmoke;
     }
 
     .cards-container{
