@@ -59,6 +59,10 @@ a{
     transition: all 300ms ease-in-out;
 }
 
+.li-home{
+    opacity: .6;
+}
+
 ul{
     list-style-type: none;
     display: flex;
