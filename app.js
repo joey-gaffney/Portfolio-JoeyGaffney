@@ -1,36 +1,25 @@
-// const navbar = document.getElementById('navbar');
-// let scrolled = false;
+const body = document.body;
+let lastScroll = 0;
 
-// window.onscroll = function() {
-//     if(window.pageYOffset > 100) {
-//         navbar.classList.remove('top');
-//         if(!scrolled) {
-//             navbar.style.transform = 'translateY(-100px)';
-//         }
-//         setTimeout(function() {
-//             navbar.style.transform = 'translateY(0)';
-//             scrolled = true;
-//         }, 200)
-//     } else {
-//         navbar.classList.add('top');
-//         scrolled = false;
-//     }
-// }
+window.addEventListener('scroll', () => {
+  const currentScroll = window.pageYOffset
 
-// $('#navbar a, .btn').on('click', function (e) {
-//     if (this.hash !== '') {
-//         e.preventDefault();
+  if (currentScroll <= 0) {
+    body.classList.remove("scroll-up")
+  }
 
-//         const hash = this.hash;
+  if (currentScroll > lastScroll && !body.classList.contains("scroll-down")) {
+    body.classList.remove("scroll-up")
+    body.classList.add("scroll-down")
+  }
+  
+  if (currentScroll < lastScroll && body.classList.contains("scroll-down")) {
+    body.classList.remove("scroll-down")
+    body.classList.add("scroll-up")
+  }
 
-//         $('html, body').animate(
-//             {
-//                 scrollTop: $(hash).offset().top - 100,
-//             },
-//             800
-//         );
-//     }
-// });
+  lastScroll = currentScroll;
+});
 
 const toggleButton = document.getElementsByClassName('toggle-button')[0]
 const navbarLinks = document.getElementsByClassName('navbar-links')[0]
