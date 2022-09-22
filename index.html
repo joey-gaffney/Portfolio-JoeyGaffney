@@ -10,16 +10,19 @@
 </head>
 <body id="home">
     <!-- NAVBAR -->
-    <nav class="navbar header" id="navbar">
+    <nav class="navbar navbarClose" id="navbar toggle">
         <div class="logo"><span>J|G</span></div>
-        <div href="#" class="toggle-button">
+        <div href="#" class="toggle-button" id="toggle">
             <i class="fa-solid fa-bars"></i>
         </div>
-        <div class="navbar-links">
+        <div class="navbar-links" id="divNav">
             <ul>
-                <li class="li li-home"><a href="#home">Home</a></li>
+                <li class="li"><a href="#home">Home</a></li>
                 <li class="li"><a href="#about">About</a></li>
-                <li class="li"><a href="#projects">Projects</a></li>
+                <li class="li"><a href="#marketing">Marketing</a></li>
+                <li class="li"><a href="#projects">Web Development</a></li>
+                <a href="https://www.linkedin.com/in/joey-gaffney-618967183/" target="_blank"><i class="fa-brands fa-linkedin-in navicon"></i></a>
+                <a href="https://github.com/joey-gaffney" target="_blank"><i class="fa-brands fa-github navicon"></i></a>
                 <li><a href="mailto:joeygaffney22@gmail.com" target="_blank" class="nav-btn">Contact</a></li>
             </ul>
         </div>
@@ -28,52 +31,48 @@
     <!-- HERO -->
     <section class="hero">
         <p class="name">Joey Gaffney</p>
-        <h1>Digital Marketer</h1>
-        <span>Web Developer</span>
-        <a href="mailto:joeygaffney22@gmail.com" target="_blank" class="btn hero-btn">Contact</a>
+        <!-- <h1 style="font-size: 3rem;">Marketer</h1> -->
+        <p style="font-size: 2rem;">Marketer - Developer - Designer</p>
+        <div class="hero-links">
+            <a href="mailto:joeygaffney22@gmail.com" target="_blank" class="btn hero-btn">Contact</a>
+            <a href="https://docs.google.com/document/d/1PYLiB5JXd6n2xENii5KIWRVevj-zb9aD1EjPMvfXC1g/edit?usp=sharing" target="_blank" class="res-btn">Resume</a>
+        </div>
         <div class="hero-img-div">
             <img class="hero-img" src="self.jpg_22-34-35-632-removebg-preview.png" alt="">
         </div>
     </section>
-    
+
     <!-- ABOUT -->
-    <section id="about" class="about">
-        <div class="about-container">
-            <div class="text-container">
-                <div class="about-text">
-                    <p>Hi there, I'm Joey. I'm a digital marketer and web developer <span class="text-span">experienced in helping people and businesses grow their online presence through targeted marketing and advertising</span>.</p>
-                    <br>
-                    <div class="icons-container">
-                        <i class="fa-solid fa-check about-icons"></i>
-                        <span>Facebook Ads</span>
-                        <br>
-                        <i class="fa-solid fa-check about-icons"></i>
-                        <span>Google Ads</span>
-                        <br>
-                        <i class="fa-solid fa-check about-icons"></i>
-                        <span>Google Analytics</span>
-                    </div>
-                    <br>
-                    <div class="dev-icons">
-                        <i class="fa-brands fa-html5"></i>
-                        <i class="fa-brands fa-css3-alt"></i>
-                        <i class="fa-brands fa-js"></i>
-                        <i class="fa-brands fa-bootstrap"></i>
-                        <i class="fa-solid fa-terminal"></i>
-                        <i class="fa-brands fa-github"></i>
-                    </div>
-                </div>
-            </div>
-            <img class="container reveal text-container text-box" src="laptop.jpg" alt="">
-        </div>
-    </section>
+    
+    <!-- MARKETING -->
+   
     
     <!-- PROJECTS -->
     <section id="projects">
-        <p style="font-size: 2rem; text-align:center; margin-bottom: 20px;">Projects</p>
+        <p style="font-size: 2rem; text-align:center; margin-bottom: 20px;">Web development</p>
+        <div class="dev-about boxesfade">
+            <div class="dev-text">
+                <p>Experienced with website builders such as <span style="color: lightseagreen;">WordPress</span> and <span style="color: mediumslateblue;">Webflow</span></p>
+                <br>
+                <p>Mostly enjoy writing code from scratch</p>
+                <br>
+                <p style="font-size: 1.4rem;";>A few tools I use</p>
+                <div class="dev-icons">
+                    <i class="fa-brands fa-html5 html"></i>
+                    <i class="fa-brands fa-css3-alt css"></i>
+                    <i class="fa-brands fa-js js"></i>
+                    <i class="fa-brands fa-bootstrap boot"></i>
+                    <i class="fa-solid fa-terminal terminal"></i>
+                    <i class="fa-brands fa-git git"></i>
+                    <i class="fa-brands fa-github github"></i>
+                    <i class="fa-brands fa-docker docker"></i>
+                </div>
+            </div>
+        </div>
+        <p style="font-size: 1.8rem; text-align:center; margin-bottom: 20px;">Projects</p>
         <div class="projects-container-inner">
             <div class="projects-container">
-                <div class="container-row">
+                <div class="container-row box">
                     <div class="row-column-1">
                         <h3>Task List App</h3>
                         <p>This task list application allows a user to add, list, filter, delete and save their data to local storage. This project allowed me to dive deep into the concept <span style="font-style: italic;">"Think like a programmer."</span></p>
@@ -84,15 +83,15 @@
                     </div>
                 </div>
                 <div class="container-row">
-                    <div class="row-column-2">
-                        <img class="hoverimg hoverimg1" src="tasknew.jpg" alt="">
+                    <div class="row-column-2 boxesnew">
+                        <img class="" src="tasknew.jpg" alt="">
                     </div>
                 </div>
             </div>
                     
             <div class="projects-container reverse">
                 <div class="container-row reverse">
-                     <div class="row-column-1">
+                     <div class="row-column-1 boxesnew">
                         <h3>IDLC</h3>
                         <p>This is a fictional multi-page, responsive and functional website that showcases layout as well as some cool JavaScript and jQuery features such as a tranparent navigation menu with smooth-scroll. I used flexbox featues for the layout. I also created a utilities class in CSS for efficiency.</p>
                         <div class="links">
@@ -102,7 +101,7 @@
                     </div>
                 </div>
                 <div class="container-row">
-                    <div class="row-column-2">
+                    <div class="row-column-2 box">
                         <img class="hoverimg" src="idlc.png" alt="">
                     </div>
                 </div>
@@ -131,22 +130,11 @@
     <!-- FOOTER -->
     <footer id="contact">
         <div class="foot-container">
-            <div class="foot-left">
-                <p style="font-style: italic;">PASSION | ENERGY | CHARISMA | GOOD VIBES</p>
-            </div>
-            <div class="foot-right">
-                <p style="margin-bottom: 12px;">INFO</P>
-                    <div class="list">
-                    <i class="fa-solid fa-umbrella-beach"></i><span>Southern California</span>
-                    <br>
-                    <i class="fa-solid fa-envelope"></i><a href="mailto:joeygaffney22@gmail.com" target="_blank">Email</a>
-                    <br>
-                    <i class="fa-solid fa-phone"></i><a href="tel:909-725-8072">909-725-8072</a>
-                </div>
-                <div class="cnt-links">
-                    <a href="https://www.linkedin.com/in/joey-gaffney-618967183/" target="_blank"><i class="fa-brands fa-linkedin-in one"></i></a>
-                    <a href="https://github.com/joey-gaffney" target="_blank"><i class="fa-brands fa-github one"></i></a>
-                </div>
+            <p>Get in touch with me</p>
+            <div class="cnt-links">
+                <a href="https://www.linkedin.com/in/joey-gaffney-618967183/" target="_blank"><i class="fa-brands fa-linkedin-in one"></i></a>
+                <a href="https://github.com/joey-gaffney" target="_blank"><i class="fa-brands fa-github one"></i></a>
+                <a href="mailto:joeygaffney22@gmail.com" target="_blank"><i class="fa-solid fa-envelope one"></i></a>
             </div>
         </div>
     </footer>

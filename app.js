@@ -1,3 +1,5 @@
+// nav scroll
+
 const body = document.body;
 let lastScroll = 0;
 
@@ -21,6 +23,8 @@ window.addEventListener('scroll', () => {
   lastScroll = currentScroll;
 });
 
+// toggle
+
 const toggleButton = document.getElementsByClassName('toggle-button')[0]
 const navbarLinks = document.getElementsByClassName('navbar-links')[0]
 const navbarBar = document.getElementsByClassName('navbar')[0]
@@ -30,20 +34,44 @@ toggleButton.addEventListener('click', () => {
     navbarBar.classList.toggle('active')
 })
 
-function reveal() {
-    var reveals = document.querySelectorAll(".reveal");
-  
-    for (var i = 0; i < reveals.length; i++) {
-      var windowHeight = window.innerHeight;
-      var elementTop = reveals[i].getBoundingClientRect().top;
-      var elementVisible = 150;
-  
-      if (elementTop < windowHeight - elementVisible) {
-        reveals[i].classList.add("active");
-      } else {
-        reveals[i].classList.remove("active");
-      }
+// ANIMATIONS
+
+const boxes = document.querySelectorAll('.box')
+
+window.addEventListener('scroll', checkBoxes)
+
+checkBoxes() 
+
+function checkBoxes() {
+  const triggerBottom = window.innerHeight / 5 * 4
+
+  boxes.forEach(box => {
+    const boxTop = box.getBoundingClientRect().top
+
+    if(boxTop < triggerBottom) {
+      box.classList.add('show')
+    } else {
+      box.classList.remove('show')
     }
-  }
-  
-  window.addEventListener("scroll", reveal);
+  })
+}
+
+const boxesRight = document.querySelectorAll('.boxesnew')
+
+window.addEventListener('scroll', checkBoxesNew)
+
+checkBoxesNew() 
+
+function checkBoxesNew() {
+  const triggerBottomNew = window.innerHeight / 5 * 4
+
+  boxesRight.forEach(boxesnew => {
+    const boxTopNew = boxesnew.getBoundingClientRect().top
+
+    if(boxTopNew < triggerBottomNew) {
+      boxesnew.classList.add('shownew')
+    } else {
+      boxesnew.classList.remove('shownew')
+    }
+  })
+}
