@@ -205,6 +205,84 @@ ul{
     display: inline-block;
 }
 
+
+/* ABOUT */
+
+.about-container img{
+    max-width: 500px;
+    min-width: 400px;
+    width: 100%;
+}
+
+.about{
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.about-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 1.6;
+    max-width: 1300px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 16px;
+    padding-right: 16px;
+}
+
+.about-text{
+    padding: 40px 0px;
+    max-width: 900px;
+    /* font-size: 1.1rem; */
+    /* font-weight: 200; */
+    color: #fff;
+    font-weight: 200;
+}
+
+.i-span{
+    color: rgb(0, 98, 255);
+    font-weight: 400;
+    text-decoration: underline;
+}
+
+.icons-container{
+    padding-left: 40px;
+    text-transform: uppercase;
+}
+
+.icons-container i{
+    color: rgb(0, 98, 255);
+}
+
+/* MARKETING */
+#marketing{
+    max-width: 1300px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-bottom: 10px;
+}
+
+.marketing-container img{
+    max-width: 400px;
+    width: 100%;
+    /* min-width: 400px; */
+    border-radius: 6px;
+}
+
+.marketing-container{
+    display: flex;
+    justify-content: space-evenly;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
 /* PROJECTS -----------------------------------------------*/
 #projects{
     padding: 40px 0px;
@@ -294,6 +372,7 @@ ul{
     line-height: 1.6;
     opacity: .8;
     letter-spacing: 1px;
+    font-weight: 200;
 }
 
 .row-column-2{
@@ -430,6 +509,10 @@ footer{
 
     .hero h1{
         font-size: 2rem;
+    }
+
+    .about-container{
+        flex-direction: column;
     }
 
     .projects-container{
