@@ -238,8 +238,6 @@ ul{
 .about-text{
     padding: 40px 0px;
     max-width: 900px;
-    /* font-size: 1.1rem; */
-    /* font-weight: 200; */
     color: #fff;
     font-weight: 200;
 }
@@ -370,7 +368,6 @@ ul{
 .row-column-1 p{
     margin-top: 10px;
     line-height: 1.6;
-    opacity: .8;
     letter-spacing: 1px;
     font-weight: 200;
 }
