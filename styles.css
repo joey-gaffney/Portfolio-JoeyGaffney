@@ -293,7 +293,7 @@ ul{
 
 .dev-text{
     text-align: center;
-    padding: 20px 0px;
+    padding: 20px 16px;
     color: #fff;
     opacity: .8;
 }
@@ -358,7 +358,7 @@ ul{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 20px 20px;
+    padding: 20px 16px;
 }
 
 .row-column-1 h3{
