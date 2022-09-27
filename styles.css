@@ -14,8 +14,9 @@ html{
 body{
     font-family: 'Poppins', sans-serif;
     font-weight: 400;
-    color: #fff;
-    background-color:rgb(30, 30, 30);
+    color: #333;
+    /* background-color:rgb(30, 30, 30); */
+    background-color: #fff;
     overflow-x: hidden;
     font-size: 1.1rem;
 }
@@ -48,6 +49,12 @@ a{
     background-color:rgb(30, 30, 30);
     z-index: 9999;
     transition: all 300ms ease-in-out;
+}
+
+.logo{
+    color: #fff;
+    opacity: .7;
+    letter-spacing: 12px;
 }
 
 ul{
@@ -127,16 +134,16 @@ ul{
     align-items: center;
     justify-content: center;
     text-align: center;
-    color:#fff;
+    color:#333;
     position: relative;
 }
 
 .res-btn{
     padding: 12px 24px;
-    border: 1px solid #fff;
+    border: 1px solid #333;
     border-radius: 4px;
     margin-right: 8px;
-    color: #fff;
+    color: #333;
     opacity: 1;
     transition: .1s ease-in-out;
 }
@@ -165,7 +172,7 @@ ul{
 
 .hero-img{
     height: 100%;
-    opacity: .2;
+    opacity: .7;
 }
 
 .name{
@@ -216,7 +223,6 @@ ul{
 }
 
 .about{
-    background: black;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -232,15 +238,12 @@ ul{
     width: 100%;
     margin-left: auto;
     margin-right: auto;
-    padding-left: 16px;
-    padding-right: 16px;
+    padding: 0px 16px;
 }
 
 .about-text{
-    padding: 40px 0px;
-    max-width: 900px;
-    color: #fff;
-    font-weight: 200;
+    max-width: 800px;
+    text-align: center;
 }
 
 .i-span{
@@ -294,7 +297,7 @@ ul{
 .dev-text{
     text-align: center;
     padding: 20px 16px;
-    color: #fff;
+    color: #333;
     opacity: .8;
 }
 
@@ -313,7 +316,7 @@ ul{
 
 .dev-icons i:hover{
     transform: translateY(-12px);
-    opacity: .7;
+    /* opacity: .7; */
 }
 
 .projects-container-inner{
@@ -323,6 +326,7 @@ ul{
     padding-left: 16px;
     padding-right: 16px;
     padding-bottom: 10px;
+    border-top: 2px solid #333;
 }
 
 .projects-container{
@@ -362,7 +366,7 @@ ul{
 }
 
 .row-column-1 h3{
-    color: #fff;
+    color: #333;
     font-size: 1.6rem;
 }
 
@@ -370,7 +374,7 @@ ul{
     margin-top: 10px;
     line-height: 1.6;
     letter-spacing: 1px;
-    font-weight: 200;
+    /* font-weighst: 200; */
 }
 
 .row-column-2{
@@ -393,7 +397,8 @@ ul{
     border-radius: 4px;
     margin-right: 8px;
     color: #fff;
-    background-color: rgb(171, 64, 92);
+    /* background-color: rgb(171, 64, 92); */
+    background-color: rgb(223, 103, 135);
     opacity: 1;
     transition: .1s ease-in-out;
 }
@@ -487,11 +492,14 @@ footer{
     transition: all .2s ease-in-out;
     cursor: pointer;
     transition: .3s ease-in-out;
-    opacity: .8;
+    background-color: #333;
+    padding: 6px;
+    border-radius: 50%;
+    border: 2px solid rgb(0, 98, 255);
 }
 
 .one:hover{
-    opacity: .5;
+    opacity: .9;
 }
 
 @keyframes slide-in-right {
@@ -561,7 +569,7 @@ footer{
         font-size: 12px;
         position: absolute;
         top: -15px;
-        color: #fff;
+        color: #333;
     }
     .css:hover::after{
         content: 'CSS';
@@ -570,7 +578,7 @@ footer{
         font-size: 12px;
         position: absolute;
         top: -15px;
-        color: #fff;
+        color: #333;
     }
     .js:hover::after{
         content: 'JavaScript';
@@ -579,7 +587,7 @@ footer{
         font-size: 12px;
         position: absolute;
         top: -15px;
-        color: #fff;
+        color: #333;
     }
     .boot:hover::after{
         content: 'Bootstrap';
@@ -588,7 +596,7 @@ footer{
         font-size: 12px;
         position: absolute;
         top: -15px;
-        color: #fff;
+        color: #333;
     }
     .terminal:hover::after{
         content: 'Terminal';
@@ -597,7 +605,7 @@ footer{
         font-size: 12px;
         position: absolute;
         top: -15px;
-        color: #fff;
+        color: #333;
     }
     .git:hover::after{
         content: 'Version Control ';
@@ -606,7 +614,7 @@ footer{
         font-size: 12px;
         position: absolute;
         top: -15px;
-        color: #fff;
+        color: #333;
     }
     .github:hover::after{
         content: 'GitHub';
@@ -615,7 +623,7 @@ footer{
         font-size: 12px;
         position: absolute;
         top: -15px;
-        color: #fff;
+        color: #333;
     }
     .docker:hover::after{
         content: 'Docker';
@@ -624,6 +632,6 @@ footer{
         font-size: 12px;
         position: absolute;
         top: -15px;
-        color: #fff;
+        color: #333;
     }
 }
